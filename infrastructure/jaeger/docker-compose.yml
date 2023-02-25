@@ -21,8 +21,8 @@ services:
       COLLECTOR_ZIPKIN_HOST_PORT: ":9411"
       COLLECTOR_OTLP_ENABLED: true
     networks:
-      - infrastructure
+      - infra 
 
 networks:
-  infrastructure:
+  infra:
     external: true

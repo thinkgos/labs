@@ -13,8 +13,8 @@ services:
     environment:
       POSTGRES_PASSWORD: 123456
     networks:
-      - infrastructure
+      - infra 
 
 networks:
-  infrastructure:
+  infra:
     external: true
