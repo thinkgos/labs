@@ -1,7 +1,7 @@
 version: "3"
 services:
   mysql:
-    image: mysql:5.7
+    image: mysql:8.0.32
     restart: unless-stopped
     ports:
       - 3306:3306
@@ -15,7 +15,7 @@ services:
       MYSQL_USER: things # 可选,授于指定MYSQL_DATABASE 超级权限
       MYSQL_PASSWORD: 123456 # 可选,授于指定MYSQL_DATABASE 超级权限
       TZ: Asia/Shanghai
-    command: mysqld --sql_mode=""
+      LANG: C.UTF-8
     networks:
       - infra
 

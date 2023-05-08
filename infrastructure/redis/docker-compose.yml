@@ -11,6 +11,7 @@ services:
     command:
       - redis-server
       - /usr/local/etc/redis/redis.conf
+    mem_limit: 1GiB
     networks:
       - infra
 
